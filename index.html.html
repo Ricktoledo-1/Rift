@@ -1,0 +1,51 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Basics</title>
+
+<link href="stylesjquery.css" rel="stylesheet" type="text/css" />
+</head>
+<h1>Game is playable but not complete, Boss fight is under construction.
+    <audio loop id="audio">
+    <source src="music/spacemusic.wav">
+</audio>
+<body>
+<div class="border">
+<div id="gameWindow">
+    <div id="foreground" class="foreground"></div>
+    <div id="foreground2" class="foreground"></div>
+    <div id="lifeBar"></div>
+    <div id="wormhole"></div>
+    <div id="wormhole1"></div>
+    <div id="boss"></div>
+    <div class="fireball"></div>
+    <div id="gameOver" class="otherWindows">
+        <div id="restartButton" class="gameButton1"></div>
+    </div>
+    <div id="startWindow" class="otherWindows">
+        
+    <div id="rulesButton" class="gameButton3"></div>
+            <div id="startButton" class="gameButton"></div>
+    </div>
+
+   
+
+    <div id="rulesWindow" class="otherWindows">
+        <div id="resetRulesButton" class="gameButton2"></div>
+    </div>
+
+	<img src="images/boywalk.png" id="player" />
+    <img src="images/powerup.jpg" id="powerUp"/>
+    <img src="images/boysaber.gif" id="lightsaber"/>
+
+    
+    
+
+</div>	
+<audio id="jump" preload="auto"><source src="jump.mp3" /><source src="jump.wave" /></audio>
+<script type="text/javascript" src="jquery-3.4.1.min.js"></script>
+<script type="text/javascript" src="playerPlatformStartNew.js"></script>
+<script type="text/javascript" src="playerJ.js"></script>
+</body>
+</html>

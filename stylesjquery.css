@@ -1,0 +1,196 @@
+@charset "utf-8";
+body{margin:0;
+margin-top:30px;}
+.border{
+	margin:0 auto;
+	width:1280px;
+	height:600px;
+	position:relative;
+	background-color:#000;
+	padding:1px;
+	overflow:hidden;
+}
+
+.obstacle{
+	position: absolute;
+	background:url(images/obstacle.png);
+	width: 50px;
+	height: 50px;
+	z-index: 5;
+}
+#powerUp{
+	position: absolute;
+	width: 50px;
+	height: 50px;
+	z-index: 5;
+	left: 720px;
+	top: 406px;
+}
+h1{
+	text-align: center;
+}
+#boss{
+	background-image: url('images/boss.png');
+	z-index: 50;
+	position: absolute;
+	height: 241px;
+	width: 300px;
+	left: 2200px;
+	top: 340px;
+}
+.bubbles{
+	background-image: url('images/fireball.png');
+	z-index: 50;
+	position: absolute;
+}
+#gameWindow{
+	margin:0 auto;
+	width:1280px;
+	height:600px;
+	position:relative;
+	background:url(images/foreground.png) transparent;
+	overflow:hidden;
+}
+#rulesWindow{
+	visibility: hidden;
+	margin:0 auto;
+	width:1280px;
+	height:600px;
+	position:relative;
+	background:url(images/rules.jpg) transparent;
+	overflow:hidden;
+}
+
+#wormhole{
+	background: url(images/wormhole.gif);
+	position: absolute;
+	z-index:3;
+	left:-9px;
+	width:150px;
+	height:150px;
+	top: 250px;
+}
+#wormhole1{
+	background: url(images/wormhole.gif);
+	position: absolute;
+	z-index:3;
+	left:1180px;
+	width:150px;
+	height:150px;
+	top: 320px;
+}
+.foreground{
+	background:url(images/foreground.png) transparent;
+	z-index:2;
+	margin:0 auto;
+	width:1280px;
+	height:600px;
+	position:absolute;
+	overflow:hidden;
+}
+
+#foreground2{
+	background:url(images/foreground2.png) transparent;
+}
+
+#gameOver{
+	visibility:hidden;
+	background: url(images/gameover.png);
+}
+#lifeBar{
+	background:url(images/lives.png);
+	position:absolute;
+	width:150px;
+	height:50px;
+	z-index:3;
+	left:20px;
+}
+.otherWindows{
+	margin:0 auto;
+	width:1280px;
+	height:600px;
+	position:absolute;
+	background-color:#000;
+	color:#fff;
+	overflow:hidden;
+	z-index:100;
+}
+
+#player{
+	position:absolute;
+	z-index:50;
+}
+
+.flip{
+	-moz-transform: scaleX(-1);
+	-webkit-transform: scaleX(-1);
+	-o-transform: scaleX(-1);
+	transform: scaleX(-1);
+	-ms-filter: fliph; 	/*IE*/
+	filter: fliph; 		/*IE*/
+}
+
+
+
+.enemy{
+	position:absolute;
+	z-index:50;
+}
+
+#audio{
+	position:relative;
+	left:120px;
+}
+
+#bgm{
+	font-size: 22px;
+	font-weight: bolder;
+	font-style: italic;
+	position: relative;
+	left:130px;
+}
+
+#startWindow{
+	background:url(images/startgame.png);
+}
+.gameButton{
+	background:url(images/play.png);
+	height:100px;
+	width:200px;
+	position:absolute;
+	top:79%;
+	left:27%;
+	z-index:10;
+	cursor:pointer;
+
+}
+.gameButton1{
+	background:url(images/restart.png);
+	height:100px;
+	width:200px;
+	position:absolute;
+	top:81%;
+	left:41%;
+	z-index:10;
+	cursor:pointer;
+}
+.gameButton2{
+	background:url(images/back.png);
+	height:100px;
+	width:200px;
+	position:absolute;
+	top:1%;
+	left:80%;
+	z-index:10;
+	cursor:pointer;
+}
+.gameButton3{
+	background:url(images/brules.png);
+	height:100px;
+	width:200px;
+	position:absolute;
+	top:79%;
+	left:47%;
+	z-index:10;
+	cursor:pointer;
+}
